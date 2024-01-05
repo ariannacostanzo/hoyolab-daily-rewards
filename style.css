@@ -83,6 +83,7 @@ header {
     left: 0;
     top: 0;
     right: 0;
+    z-index: 2;
 }
 
 
@@ -266,8 +267,6 @@ header img {
     
 }
 
-
-
 .ricompense {
     background: url(/images/ricompense/bg-ricompense.png) center center / cover no-repeat;
     padding: 0.7rem 0;
@@ -300,7 +299,6 @@ hr {
     
 }
 
-/* quello che si vede della scrollbar */
 ::-webkit-scrollbar-thumb {
     background-color: #f2efde;
     border-radius: 2px;
@@ -354,4 +352,38 @@ hr {
     font-size: 1rem;
     letter-spacing: 0.5px;
     line-height: 30px;
+}
+
+/* social icons */
+
+#social-icons {
+    position: relative;
+}
+
+.social-icons-container {
+    position: absolute;
+    top: 170%;
+    left: -151.5px;
+    width: 340px;
+    height: 92px;
+    background: #fff;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.social-icons-container::before {
+    content: '';
+    position: absolute;
+    right: 141px;
+    bottom: 35px;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 80px solid #fff;
+    z-index: -1;
+}
+
+.social-icons-img {
+    width: 50px;
 }
