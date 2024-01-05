@@ -8,17 +8,16 @@ ghostElement.addEventListener('click', function() {
     ghostDropdownMenu.classList.toggle('d-none');
 });
 
-// * CAMBIO DELL'IMMAGINE ALL'HOVER
+// * CHIUDERE I POPUP
 
-// const firstGhostLi = document.getElementById('first-ghost-li');
-// const secondGhostLi = document.getElementById('second-ghost-li');
-// const blueGhost = document.getElementById('blue-ghost');
-// const blueEsci = document.getElementById('blue-esci');
-// const greyGhost = document.getElementById('grey-ghost');
-// const greyEsci = document.getElementById('grey-esci');
+const noteIcon = document.getElementById('note');
+const popupFirst = document.getElementById('popup1');
+const closeFirst = document.getElementById('close1');
 
+noteIcon.addEventListener('click', function() {
+    popupFirst.classList.remove('d-none');
+});
 
-// firstGhostLi.addEventListener('mouseover', function() {
-//     greyGhost.classList.add('d-none');
-//     blueGhost.classList.remove('d-none');
-// });
+closeFirst.addEventListener('click', function() {
+    popupFirst.classList.add('d-none');
+});
