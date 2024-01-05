@@ -8,7 +8,7 @@ ghostElement.addEventListener('click', function() {
     ghostDropdownMenu.classList.toggle('d-none');
 });
 
-// * CHIUDERE I POPUP
+// * CHIUDERE I POPUP, primo
 
 const noteIcon = document.getElementById('note');
 const popupFirst = document.getElementById('popup1');
@@ -20,4 +20,18 @@ noteIcon.addEventListener('click', function() {
 
 closeFirst.addEventListener('click', function() {
     popupFirst.classList.add('d-none');
+});
+
+// * CHIUDERE I POPUP, secondo
+
+const questionIcon = document.getElementById('question');
+const popupSecond = document.getElementById('popup2');
+const closeSecond = document.getElementById('close2');
+
+questionIcon.addEventListener('click', function() {
+    popupSecond.classList.remove('d-none');
+});
+
+closeSecond.addEventListener('click', function() {
+    popupSecond.classList.add('d-none');
 });

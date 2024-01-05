@@ -244,7 +244,7 @@ header img {
     position: relative;
 }
 
-#close1 {
+#close1, #close2 {
     border: 2px solid #bdb099;
     border-radius: 50%;
     width: 35px;
@@ -308,7 +308,7 @@ hr {
     
 }
 
-.popup li {
+#popup1 li {
     border: 2px solid rgb(235, 232, 213);
     border-radius: 7px;
 }
@@ -332,10 +332,26 @@ hr {
     font-size: .8rem;
 }
 
-.popup li:last-child {
+#popup li:last-child {
     border: 0;
     text-align: center;
     color: rgba(142, 129, 128, 0.55);
     font-size: .9rem;
 
+}
+
+
+/* popup 2  */
+
+#popup2 .scroll-content {
+    height: 350px;
+    overflow: auto;
+}
+
+
+#popup2 li {
+    color: rgb(142, 129, 106);
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    line-height: 30px;
 }
