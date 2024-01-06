@@ -46,3 +46,26 @@ socialIcon.addEventListener('click', function() {
     socialIconsContainer.classList.toggle('d-none');
 
 });
+
+//* QUANDO CLICCO SI CHECKA LA RICOMPENSA
+
+// const checked = document.querySelector('.checked');
+// const rewardContainer = document.querySelector('.reward-bg-img');
+
+
+// rewardContainer.addEventListener('click', function(){
+//     checked.classList.remove('d-none');
+
+// });
+
+
+
+
+const rewardContainers = document.querySelectorAll('.reward-bg-img');
+
+rewardContainers.forEach((container, index) => {
+    container.addEventListener('click', function () {
+        const checkedElement = document.querySelectorAll('.checked')[index];
+        checkedElement.classList.toggle('d-none');
+    });
+});

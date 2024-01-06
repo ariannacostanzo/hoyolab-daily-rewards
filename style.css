@@ -488,6 +488,17 @@ section {
     cursor: pointer;
 }
 
+.checked {
+    position: absolute;
+    left: 12px;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 78px;
+    height: 105px;
+    z-index: 1;
+}
+
 .reward-img {
     position: absolute;
     width: 55px;
