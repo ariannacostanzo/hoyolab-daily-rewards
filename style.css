@@ -47,7 +47,7 @@ body {
 }
 
 .body {
-    background-image: url(images/bg.png ), linear-gradient(rgb(72, 115, 172), rgb(107, 152, 192));
+    background-image: url(images/bg.png ), linear-gradient(rgb(79, 119, 172), rgb(107, 152, 192));
     background-repeat: no-repeat;
     margin-top: 60px;
     height: 125vh;
@@ -330,13 +330,15 @@ hr {
     font-size: .8rem;
 }
 
-#popup li:last-child {
+#popup1 li:last-child {
     border: 0;
     text-align: center;
     color: rgba(142, 129, 128, 0.55);
     font-size: .9rem;
 
 }
+
+
 
 
 /* popup 2  */
@@ -388,7 +390,11 @@ hr {
     width: 50px;
 }
 
-/* accesso giornaliero */
+/* main */
+
+#daily-access {
+    transform: translateY(15px);
+}
 
 section {
     background-color: #fffdf0;
@@ -398,38 +404,144 @@ section {
     box-shadow: rgb(94, 139, 179) 0px 0px 0px 5px;
 }
 
+.section-title h6 {
+    font-weight: bold;
+}
+
+/* left section */
+
 #left-section {
     width: 720px;
+    flex-shrink: 0;
+}
+
+#left-section h6 {
+    color: rgb(142, 129, 106);
+    
 }
 
 
-
-.section-title h6 {
-    color: rgb(115, 101, 76);
+.left-text p {
+    font-size: 12px;
+    color: rgb(161, 151, 133);
 }
 
+.right-text span {
+    background-color: rgb(187, 174, 151);
+    padding: 4px 15px 4px 12px;
+    /* width: 70%; */
+    border-radius: 50px;
+    border: 1px solid rgb(235, 232, 213);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+}
 
+.right-text a {
+    color: rgb(239, 240, 229);
+    font-size: 12px;
+    position: relative;
+}
 
+.right-text span:hover {
+    background-color: rgba(187, 174, 151, 0.745);
+}
+
+.right-text a::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 100%;
+    width: 6px;
+    height: 6px;
+    transform: rotate(-45deg);
+    border-width: 0px 2px 2px 0px;
+    border-style: solid;
+    border-color: rgb(239, 240, 229);
+    border-radius: 3px;
+    transition: 100ms;
+    margin-left: 2px;
+}
+
+/* sistema row cols */
+
+.my-row {
+    margin: 0 -1rem;
+}
+
+.my-col {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    width: calc(100% / 7);
+    height: 105px;
+}
+
+.reward-bg-container {
+    position: relative;
+    
+}
+
+.reward-bg-img {
+    width: 78px;
+    height: 105px;
+    cursor: pointer;
+}
+
+.reward-img {
+    position: absolute;
+    width: 55px;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    
+}
+
+.my-col p:nth-of-type(1) {
+    color: rgb(255, 253, 240);
+    font-size: 12px;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, 0);
+}
+
+.my-col p:nth-of-type(2) {
+    color: rgb(184, 171, 159);
+    font-size: 14px;
+    border-radius: 0px 0px 5px 5px;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%, 0);
+    width: 80%;
+    cursor: pointer;
+}
 
 /* right section */
 
 
 #right-section {
     width: 278px;   
-
+    /* flex-shrink: 0; */
 }
 
+#right-section h6 {
+    color: rgb(115, 101, 76);
+}
 
-.section-title a {
+#right-section a {
     font-size: 12px;
     color: rgb(142, 129, 106);
     position: relative;
+    margin-right: 5px;
 }
 
-.section-title a::after {
+#right-section a::after {
     content: "";
     position: absolute;
-    top: 8px;
+    top: 7px;
     left: 100%;
     width: 6px;
     height: 6px;
@@ -441,7 +553,7 @@ section {
     transition: 100ms;
 }
 
-.section-title a:hover {
+#right-section a:hover {
     color: rgb(182, 165, 135);
 }
 
@@ -485,7 +597,7 @@ section {
 }
 
 #error-image {
-    width: 130px;
+    width: 160px;
 }
 
 #right-section li {
