@@ -50,7 +50,7 @@ body {
     background-image: url(images/bg.png ), linear-gradient(rgb(72, 115, 172), rgb(107, 152, 192));
     background-repeat: no-repeat;
     margin-top: 60px;
-    height: 100vh;
+    height: 125vh;
 }
 
 a {
@@ -387,3 +387,114 @@ hr {
 .social-icons-img {
     width: 50px;
 }
+
+/* accesso giornaliero */
+
+section {
+    background-color: #fffdf0;
+    border-radius: 5px;
+    border: 5px solid rgb(235, 232, 213);
+    height: 760px;
+    box-shadow: rgb(94, 139, 179) 0px 0px 0px 5px;
+}
+
+#left-section {
+    width: 720px;
+}
+
+
+
+.section-title h6 {
+    color: rgb(115, 101, 76);
+}
+
+
+
+
+/* right section */
+
+
+#right-section {
+    width: 278px;   
+
+}
+
+
+.section-title a {
+    font-size: 12px;
+    color: rgb(142, 129, 106);
+    position: relative;
+}
+
+.section-title a::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 100%;
+    width: 6px;
+    height: 6px;
+    transform: rotate(-45deg);
+    border-width: 0px 2px 2px 0px;
+    border-style: solid;
+    border-color: rgb(175, 160, 135);
+    border-radius: 3px;
+    transition: 100ms;
+}
+
+.section-title a:hover {
+    color: rgb(182, 165, 135);
+}
+
+.scrollable-section {
+    height: 690px;
+    overflow: auto;
+}
+
+.right-img {
+    object-fit: cover;
+    width: 100px;
+    height: 75px;
+    display: block;
+    object-position: center center;
+    border-radius: 10px;
+}
+
+.right-section-text p:nth-of-type(1) {
+    color: rgb(142, 129, 106);
+    font-size: 13px;
+}
+.right-section-text p:nth-of-type(2) {
+    font-size: 12px;
+    color: rgb(197, 170, 141);
+}
+
+.profile-pic {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin-right: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(197, 170, 141);
+    border-image: initial;
+    border-radius: 50%;
+}
+
+.divisor {
+    width: 100%;
+}
+
+#error-image {
+    width: 130px;
+}
+
+#right-section li {
+    cursor: pointer;
+    padding: .3rem;
+}
+
+#right-section li:hover {
+    background-color: rgba(190, 176, 152, 0.26);
+    border-radius: 5px;
+}
+
